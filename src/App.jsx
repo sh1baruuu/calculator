@@ -49,7 +49,7 @@ function App() {
 
     return (
         <div
-            className={`flex flex-col select-none overflow-hidden w-screen h-screen justify-center items-center bg-gradient-to-t from-blue-300 to-blue-400 ${
+            className={`flex flex-col select-none overflow-hidden w-screen h-screen justify-center items-center bg-gradient-to-t from-gray-400 to-gray-500 ${
                 isDarkMode ? "dark" : ""
             }`}
         >
