@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import BackspaceIcon from "./components/BackspaceIcon";
 import Github from "./components/Github";
+import Moon from "./components/Moon";
 import Sun from "./components/Sun";
 import { buttons } from "./utils/buttons";
-import Moon from "./components/Moon";
-import Footer from "./components/Footer";
 
 function App() {
     const [input, setInput] = useState("");
@@ -49,13 +48,13 @@ function App() {
 
     return (
         <div
-            className={`flex flex-col select-none overflow-hidden w-screen h-screen justify-center items-center bg-gradient-to-t from-gray-400 to-gray-500 ${
+            className={`flex flex-col select-none overflow-hidden w-screen h-screen justify-center items-center bg-gradient-to-t from-slate-400 to-slate-600 ${
                 isDarkMode ? "dark" : ""
             }`}
         >
-            <div className="bg-black w-screen h-screen flex md:p-[5px] relative md:rounded-[33px] justify-center shadow-lg items-center md:w-[71.5mm] md:h-[147.5mm] ">
-                <div className="absolute hidden md:block bg-black top-3 rounded-r-full rounded-l-full w-[30%] h-5"></div>
-                <div className="bg-gradient-to-t from-slate-100 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 dark:bg-slate-900  p-3 overflow-hidden flex flex-col justify-end md:rounded-[30px] w-full h-full ">
+            <div className="bg-black flex p-[5px] z-10 relative rounded-[33px] justify-center shadow-lg items-center w-[71.5mm] h-[147.5mm] ">
+                <div className="absolute bg-black top-3 rounded-r-full rounded-l-full w-[30%] h-5"></div>
+                <div className="bg-gradient-to-t from-slate-100 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 dark:bg-slate-900  p-3  flex flex-col justify-end rounded-[30px] w-full h-full ">
                     <div className="flex flex-col px-3">
                         <input
                             type="text"
@@ -131,7 +130,6 @@ function App() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }
